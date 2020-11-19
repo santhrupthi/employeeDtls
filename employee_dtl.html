@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="employee_dtl.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <h2>Employee Details <span id="total_emp"></span></h2>
+        <hr>
+        <form action="">
+            <div class="row">
+                <div class="col-sm-3">
+                    <select id="select_dep">
+                        <option value="">---Select department--</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" id="feild_value" placeholder="name/email enter" class="form-control">
+                </div>
+                <div class="col-sm-1">
+                    <input type="button" id="filterID" value="search">
+                </div>
+                <div class="col-sm-2">
+                    <input type="reset" value="reset and reload">
+                </div>
+                <div class="col-sm-3">
+                    <select id="sortId">
+                        <option>--sort--</option>
+                        <option value="asc" selected>Name Ascending</option>
+                        <option value="dsc">Name decending</option>
+                        <option value="eAsc">Email Ascending</option>
+                        <option value="eAsc">Email Descending</option>
+                        <option value="aAsc">Age Ascending</option>
+                        <option value="eAsc">Age Descending</option>
+                    </select>
+                </div>
+        </form>
+    </div>
+    </div><br>
+    <!DOCTYPE html>
+    <div class="container">
+        <table id="mytable" class="center mytable table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Employee Name
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                    <th>
+                        Employee Address
+                    </th>
+                    <th>
+                        Department
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="employeeTable" id="employeeTable">
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
